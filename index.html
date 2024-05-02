@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include Typed.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <style>
+        /* Remove underline from anchor tags */
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1> BLOG WEBSITE</h1>
+    <!-- .container>.box*4{box-$} -->
+    <div class="container">
+        <div class="row">
+            <a href="new_blog.html" class="box">Create a new blog</a>
+            <a href="delete_blog.html" class="box">Delete an existing blog</a>
+        </div>
+        <div class="row">
+            <a href="fetch_blog.html" class="box">Fetch/Retrieve an existing blog</a>
+            <a href="update.html" class="box">Update an existing blog</a>
+        </div>
+    </div>
+    <h1>DEVELOPED BY <span class="role"></span></h1>
+    <script>
+        // Initialize Typed.js
+        var typeData = new Typed(".role", {
+            strings: [
+                "SACHIN",
+            ],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1000,
+        });
+    </script>
+</body>
+</html>

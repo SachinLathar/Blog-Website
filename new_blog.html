@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Blog</title>
+    <style>
+        /* Center the submit button */
+        input[type="submit"] {
+            display: block;
+            margin: 0 auto;
+        }
+        /* Make the textarea occupy the entire width */
+        #blog_data {
+            width: calc(100% - 4px); /* Subtracting the padding */
+        }
+        #blog_description
+        {
+            width: calc(100% - 4px);
+        }
+        /* Ensure label and input are on the same line */
+        label span {
+            display: inline-block;
+            width: 200px; /* Adjust as needed */
+        }
+    </style>
+</head>
+<body>
+    <h1>New Blog</h1>
+    <form action="./create_blog.php" method="post" enctype="multipart/form-data">
+        <label for="blog_id">Blog ID:</label>
+        <input type="text" id="blog_id" name="blog_id" required><br><br>
+        
+        <!-- Blog Description and Textarea -->
+        <label for="blog_description">Blog Description:</label><br>
+        <input type="text" id="blog_description" name="blog_description" required>
+        <br>
+        <label for="blog_data">Blog Data:</label><br>
+        <textarea id="blog_data" name="blog_data" rows="20" required></textarea><br><br>
+        
+        <!-- Upload Image -->
+        <label for="image">Upload Image:</label>
+        <input type="file" id="image" name="image" accept="image/*" required><br><br>
+        
+        <!-- Submit Button -->
+        <input type="submit" value="Create Blog">
+    </form>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Blog</title>
+    <style>
+        /* Center the submit button */
+        input[type="submit"] {
+            display: block;
+            margin: 0 auto;
+        }
+        #blog_data {
+            width: 100%;
+        }
+        #blog_description {
+            width: 100%;
+        }
+        .blog-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fetch Blog</h1>
+    <form action="fetch_blog.php" method="post">
+        <label for="blog_id">Blog ID:</label>
+        <input type="text" id="blog_id" name="blog_id" placeholder="Enter the Blog ID to fetch" required><br><br>
+        <input type="submit" value="Fetch Blog">
+    </form>
+</body>
+</html>

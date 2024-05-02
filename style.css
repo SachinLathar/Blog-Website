@@ -1,0 +1,35 @@
+/* style.css */
+
+.role {
+    color: blue;
+}
+h1
+{
+    text-align: center;
+}
+
+.box {
+    width: 200px;
+    height: 150px;
+    display:flex;
+    border:1px solid black;
+    margin:10px;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+}
+
+.row .box {
+    flex: 1;
+    margin: 10px;
+}

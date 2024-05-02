@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Blog</title>
+    <style>
+        /* Center the submit button */
+        input[type="submit"] {
+            display: block;
+            margin: 0 auto;
+        }
+        #new_data {
+            width: calc(100% - 4px); /* Subtracting the padding */
+        }
+        #new_description
+        {
+            width: calc(100% - 4px);
+        }
+    </style>
+</head>
+<body>
+    <h1>Update Blog</h1>
+    <form action="update_blog.php" method="post" enctype="multipart/form-data">
+        <label for="blog_id">Blog ID:</label>
+        <input type="text" id="blog_id" name="blog_id" placeholder="Enter the Blog ID to update" required><br><br>
+        <label for="new_description">New Blog Description:</label>
+        <input type="text" id="new_description" name="new_description" placeholder="Enter the New Blog Description" required><br><br>
+        <label for="new_data">New Blog Data:</label><br>
+        <textarea id="new_data" name="new_data" rows="18" placeholder="Enter the New Blog Data" required></textarea><br><br>
+        <label for="new_image">New Image:</label>
+        <input type="file" id="new_image" name="new_image" accept="image/*"><br><br>
+        <input type="submit" value="Update Blog">
+    </form>
+</body>
+</html>
